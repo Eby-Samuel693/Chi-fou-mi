@@ -27,9 +27,9 @@ function papier(){
 function pierre(){
     divPl.style.backgroundImage = "url("+ image3 +")";
     divBot.style.backgroundImage = "url("+ images[Math.floor(Math.random() *images.length)];
-    for(let i = 0; image3 <= image1; i++){
+    for(let i = 0; image3 <= 2; i++){
         if(divPl === image3 && divBot === image1) {
-            span3.innerHTML = " ok ";
+            span1.innerHTML = " ok ";
         }
         else{
 
@@ -41,6 +41,8 @@ function reset(){
     span1.innerHTML = null;
     span2.innerHTML = null;
     span3.innerHTML = null;
+    divBot.style.backgroundImage = null;
+    divPl.style.backgroundImage = null;
 }
 
 img1.addEventListener('click',ciseau);
